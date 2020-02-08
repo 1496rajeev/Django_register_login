@@ -1,0 +1,11 @@
+<form method="POST" action="">
+    {% csrf_token %}
+    
+    {{ reg_form.first_name }}
+    {{ reg_form.last_name }}
+    {{ reg_form.username }}
+    {{ reg_form.email }}
+    {{ reg_form.password }}
+    {{ errors }}
+    <button type="submit">Register</button>
+</form>
